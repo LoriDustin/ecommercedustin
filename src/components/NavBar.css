@@ -1,0 +1,22 @@
+.heard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    height: 75px;
+    background-color: gray;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+li{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
