@@ -1,5 +1,6 @@
 import logo from '../logo.svg';
 import './NavBar.css';
+import CartWidget from './CartWidget';
 
 const NavBar = () =>{
     const ImgReact = {
@@ -23,10 +24,11 @@ const NavBar = () =>{
                     <li>
                         <a href='#'>Contact</a>
                     </li>
+                 
                 </ul>
             </div>
             <div>
-                <button>Login</button>
+                <CartWidget/>
             </div>
 
         </div>

@@ -1,0 +1,13 @@
+.ItemList{
+    background-color: bisque;
+    height: 50vh;
+}
+h2{
+    color: blue;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    padding: 5px;
+}
