@@ -1,0 +1,48 @@
+.AgregarCarrito{
+    background-color: #002ead;
+    text-align: center;
+    width: 350px;
+    height: 20%;
+    border: 2px solid #005410;
+}
+
+.contador{
+    width: 150px;
+    background-color: black;
+    height: 150px;
+    font-size: 2rem;
+    padding: 25px;
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 8px solid white;
+    margin-bottom: 15px;
+
+}
+
+button{
+    width: 150px;
+    height: 80px;
+    font-size: 2.5rem;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00471b;
+}
+
+.botonmas{
+    background-color: #002ead;
+    
+}
+
+.botonmenos {
+    background-color: #5a01a7;
+}
