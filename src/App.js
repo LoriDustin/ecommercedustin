@@ -4,6 +4,7 @@ import ItemListContainer from './components/ItemListContainer';
 import Contador from './components/ItemCount/Contador';
 import Botton from './components/ItemCount/Botton';
 import AgregarCarrito from './components/ItemCount/AgregarCarrito';
+import ItemListContainer2 from './components/ItemListContainer/ItemListContainer2';
 
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
       nombre='Ecommercer Dustin'
       parrafo='El saludo es un acto de saludar que se saluda en un saludo comunicacional en el que una persona hace notar a otra su presencia, generalmente a través del habla o de algún gesto. Según el DRAE, «saludar»'
       />
-    
+      
       <Contador
       numero = {numclick}
       />
@@ -51,6 +52,9 @@ function App() {
       />
 
       <AgregarCarrito/>
+
+      <ItemListContainer2/>      
+
     </div>
   );
 }

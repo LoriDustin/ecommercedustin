@@ -1,0 +1,30 @@
+.container{
+    border: 2px solid black;
+    margin-top: 20px;
+    height: 300px;
+    width: 250px;
+}
+
+h1{
+    color: blue;
+    font-size: 1.5rem;
+    border: 2px solid white;
+    background-color: rgba(250, 235, 215, 0.751); 
+}
+
+.stock{
+    border: 2px solid black;
+    padding: 2px;
+    background-color: rgba(182, 168, 136, 0.751); 
+    color: black;
+}
+
+.imagen{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+
