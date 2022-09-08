@@ -5,6 +5,7 @@ import Contador from './components/ItemCount/Contador';
 import Botton from './components/ItemCount/Botton';
 import AgregarCarrito from './components/ItemCount/AgregarCarrito';
 import ItemListContainer2 from './components/ItemListContainer/ItemListContainer2';
+import ItemListContainerDetalle from './components/ItemDetalle/ItemListContainerDetalle';
 
 
 function App() {
@@ -54,6 +55,8 @@ function App() {
       <AgregarCarrito/>
 
       <ItemListContainer2/>      
+
+      <ItemListContainerDetalle/>
 
     </div>
   );
