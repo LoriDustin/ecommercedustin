@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import ItemList from './ItemList'
-import dataecommer from './dataecommer'
+import dataecommer from '../DATA/dataecommer'
 import { useParams } from 'react-router-dom'
 
 
