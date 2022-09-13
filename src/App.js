@@ -20,14 +20,16 @@ function App() {
           <Route path='/contacto' element={<ContactoPage/> } /> 
           <Route path='/productos' element={<ItemListContainer2/> } />
           <Route path='/productos/:categoryId' element={<ItemListContainer2/> } />
-
-
           <Route path='/title/:productId' element={<ItemListContainer2/>}/>
+
+          
 
           {/* <Route path='/productos/limpiadores' element={<ItemListContainer2/> } /> */}
 
 
         </Routes>
+        
+       
         {/* 
         <ItemListContainer />
 
