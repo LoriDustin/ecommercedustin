@@ -1,13 +1,16 @@
-import './CartWidget.css';
+import './Icon.css';
 import { IoIosCart } from "react-icons/io";
 
-const CartWidget = () => {
+const Icon = () => {
 
   return (
     <div>
         <IoIosCart className='Icono'/>
+
+
+        
     </div>
   )
 }
 
-export default CartWidget
+export default Icon

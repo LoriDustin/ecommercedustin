@@ -1,9 +1,9 @@
-
 import Item from './Item'
+import './Item.css'
 
 const ItemList = ( { data } ) => {
   return (
-    <>
+    <div className='ItemList'>
        { data.map((list) =>{
             return (
                 <Item
@@ -16,7 +16,7 @@ const ItemList = ( { data } ) => {
             )
         })
         }
-    </>
+    </div>
   )
 }
 
