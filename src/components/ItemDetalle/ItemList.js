@@ -1,4 +1,5 @@
 import React from 'react'
+import ItemCount from '../ItemCount/ItemCount'
 
 const ItemList = ({productos}) => {
  
@@ -9,9 +10,11 @@ const ItemList = ({productos}) => {
           productos.map((producto, index) => (
             <div key={index}>
               
-              <p>Producto:  {producto.productos}</p>
+              <p>Producto:  {producto.title}</p>
               <p>Precio : S/.{producto.precio}</p>
-              <img src={producto.img} alt='No encontrado'/>
+              <img src={producto.image} alt='No encontrado'/>
+
+              <ItemCount stock />
             </div>
           ))
             

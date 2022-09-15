@@ -33,8 +33,24 @@ const NavBar = () =>{
                         <NavLink className={({isActive}) => isActive ? "claseActivo" : "claseInactivo" } to='/productos/Arroz'>Arroz</NavLink>
                     </li>
                     <li>
+                        <NavLink className={({isActive}) => isActive ? "claseActivo" : "claseInactivo" }  to='/evento-listener'>EvenstListener</NavLink>
+                    </li>
+                    <li>
+                        <NavLink className={({isActive}) => isActive ? "claseActivo" : "claseInactivo" }  to='/comportamientos-eventos'>Comportamientos</NavLink>
+                    </li>
+
+                    <li>
+                        <NavLink className={({isActive}) => isActive ? "claseActivo" : "claseInactivo" }  to='/burbujeo'>Burbujeo</NavLink>
+                    </li>
+
+                    <li>
+                        <NavLink className={({isActive}) => isActive ? "claseActivo" : "claseInactivo" }  to='/detalleProducto'>DetalleProducto</NavLink>
+                    </li>
+
+                    <li>
                         <NavLink className={({isActive}) => isActive ? "claseActivo" : "claseInactivo" }  to='/contacto'>Contact</NavLink>
                     </li>
+
                     <li>
                         <Link to='https://notube.site/es/youtube-app-v19' target='_blank'>Pagina Externa</Link>
                     </li>

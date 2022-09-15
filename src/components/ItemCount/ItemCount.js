@@ -13,8 +13,8 @@ const onAdd = (producto) =>{
     <div className='contador'>
 
     <Botton
-    initial={3}
-    stock={15}
+    initial={1}
+    stock={10}
     onAdd={onAdd}
     />
 

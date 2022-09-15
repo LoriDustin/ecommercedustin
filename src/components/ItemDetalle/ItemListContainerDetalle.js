@@ -1,6 +1,6 @@
 import { useEffect, useState} from 'react'
 import ItemList from './ItemList'
-import dataecommer from './dataecommer'
+import dataecommer from '../DATA/dataecommer'
 
 // 'https://rickandmortyapi.com/api/character/?status=alive'
 const ItemListContainerDetalle = () => {
