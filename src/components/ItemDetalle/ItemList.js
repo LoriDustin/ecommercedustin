@@ -14,7 +14,7 @@ const ItemList = ({productos}) => {
               <p>Precio : S/.{producto.precio}</p>
               <img src={producto.image} alt='No encontrado'/>
 
-              <ItemCount stock />
+              <ItemCount />
             </div>
           ))
             

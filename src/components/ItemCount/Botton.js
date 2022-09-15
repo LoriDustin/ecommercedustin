@@ -16,11 +16,13 @@ const Botton = ({initial, stock, onAdd}) => {
 
   return (
     <div className='counter'>
-      <button disabled={count <= 1} onClick={reducir}>-</button>
-      <span>{count}</span>
-      <button disabled={count >= stock} onClick={aumentar}>+</button>
+      <div className='OrdeContador'>
+        <button className='buttonReducir' disabled={count <= 1} onClick={reducir}>-</button>
+        <span>{count}</span>
+        <button className='buttonAumentar' disabled={count >= stock} onClick={aumentar}>+</button>
+      </div>
       <div>
-          <button disabled={stock <= 0} onClick={() => onAdd(count)}>Agregar al carrito</button>
+          <button className='ButtonAgregar' disabled={stock <= 0} onClick={() => onAdd(count)}>Agregar al carrito (console.log(esta))</button>
       </div>
     </div>
   )
