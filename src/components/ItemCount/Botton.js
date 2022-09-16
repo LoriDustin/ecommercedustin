@@ -22,7 +22,7 @@ const Botton = ({initial, stock, onAdd}) => {
         <button className='buttonAumentar' disabled={count >= stock} onClick={aumentar}>+</button>
       </div>
       <div>
-          <button className='ButtonAgregar' disabled={stock <= 0} onClick={() => onAdd(count)}>Agregar al carrito (console.log(esta))</button>
+          <button className='ButtonAgregar' disabled={stock <= 0} onClick={() => onAdd(count)}>Agregar al carrito (console.log(esta1))</button>
       </div>
     </div>
   )

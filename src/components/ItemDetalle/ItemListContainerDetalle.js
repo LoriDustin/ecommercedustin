@@ -15,7 +15,7 @@ const ItemListContainerDetalle = () => {
     useEffect(() => {
         const getdata = new Promise(resolver => {
             setTimeout( () => {
-                fetch('./dataecommer.js')
+                fetch('../DATA/dataecommer.js')
             .then((response) => {
                 return response.json()
             })

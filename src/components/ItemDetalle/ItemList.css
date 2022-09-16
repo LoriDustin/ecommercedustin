@@ -1,0 +1,24 @@
+.Itemlist{
+    width: 600px;
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+    border: black 2px solid;
+    border-radius: 5%;
+
+}
+
+.flexItemlist{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.TitleItemlist{
+    color: black;
+    background-color: blue;
+}
+
+.imgItemlist{
+    width: 250px;
+    height: 250px;
+}
