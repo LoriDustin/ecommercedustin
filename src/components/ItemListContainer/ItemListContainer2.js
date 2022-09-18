@@ -7,19 +7,8 @@ import { useParams } from 'react-router-dom'
 
 const ItemListContainer2 = () => {
     const {categoryId} = useParams();
-
-
-    console.log('categoryId',categoryId)
-    // console.log(useParams())
-
-
-
+ 
     const [data, setdata] = useState([]);
-
-    
-
-
-
 
     useEffect(() => {
        const getdata = new Promise(resolver => {
@@ -29,7 +18,6 @@ const ItemListContainer2 = () => {
     });
      
         getdata.then(res => {
-
             if(categoryId){
                const newProducts = res.filter(item=>item.categoria === categoryId) 
                setdata(newProducts)

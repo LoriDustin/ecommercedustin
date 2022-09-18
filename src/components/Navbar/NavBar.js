@@ -33,6 +33,9 @@ const NavBar = () =>{
                         <NavLink className={({isActive}) => isActive ? "claseActivo" : "claseInactivo" } to='/productos/Arroz'>Arroz</NavLink>
                     </li>
                     <li>
+                        <NavLink className={({isActive}) => isActive ? "claseActivo" : "claseInactivo" } to='/productos/Chocolate'>Chocolate</NavLink>
+                    </li>
+                    <li>
                         <NavLink className={({isActive}) => isActive ? "claseActivo" : "claseInactivo" }  to='/evento-listener'>EvenstListener</NavLink>
                     </li>
                     <li>
