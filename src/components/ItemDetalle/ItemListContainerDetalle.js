@@ -1,5 +1,5 @@
 import { useEffect, useState} from 'react'
-import ItemList from './ItemList'
+import ItemListDetalle from './ItemListDetalle'
 import dataecommer from '../DATA/dataecommer'
 
 import { useParams } from 'react-router-dom'
@@ -8,10 +8,10 @@ import { useParams } from 'react-router-dom'
 
 const ItemListContainerDetalle = () => {
     
-    const {detalleId} = useParams();
+    
 
     const [character, setcharacter] = useState([])
-    
+    const {detalleId} = useParams();
 
     const getData = (id) =>{
         return new Promise((resolver) =>{
@@ -51,7 +51,7 @@ const ItemListContainerDetalle = () => {
 
   return (
     <div>
-        <ItemList
+        <ItemListDetalle
         productos = {character}  />
         
        

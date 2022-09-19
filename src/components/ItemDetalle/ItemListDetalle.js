@@ -3,7 +3,7 @@ import './ItemList.css'
 import ItemCount from '../ItemCount/ItemCount'
 
 
-const ItemList = ({ productos }) => {
+const ItemListDetalle = ({ productos }) => {
  
 
   return (
@@ -31,4 +31,4 @@ const ItemList = ({ productos }) => {
   )
 }
 
-export default ItemList
+export default ItemListDetalle

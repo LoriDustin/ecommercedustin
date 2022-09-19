@@ -12,13 +12,10 @@ const ItemList = ( { data } ) => {
                 <img className='imagen' src={list.image} alt={list.title} />
                 <p>Precio : {list.precio}</p>
                 <p className='stock'>En stock: {list.stock}</p>
-              <Link to={`/detalle/ ${list.id}`}>
+              <Link to={`/detalle/${list.id}`}>
               <button className='boton-ver'>Ver detalle...</button>
               </Link>
           </div>
-
-
-
                 // <Item
                 // key={list.id}
                 // title={list.title}
@@ -27,7 +24,6 @@ const ItemList = ( { data } ) => {
                 // stock={list.stock}
                 // />
             )
-
 
 
         })
