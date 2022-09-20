@@ -13,6 +13,7 @@ const onAdd = (cantidad) =>{
   console.log(`Comprastes ${cantidad} unidades de ${producto.title}`)
   addItem(producto, cantidad)
 
+
 }
 
 
