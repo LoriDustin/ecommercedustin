@@ -16,6 +16,8 @@ const CartContainer = () => {
         ))}
 
         <button onClick={()=> clear()}>Vaciar el Carrito</button>
+    
+          
       </div>
   
     </div>
