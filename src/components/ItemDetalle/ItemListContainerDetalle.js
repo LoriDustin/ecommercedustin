@@ -32,18 +32,25 @@ const ItemListContainerDetalle = () => {
 
 
     useEffect(() => {
-        const getdata = new Promise(resolver => {
+        const getdata = new Promise( resolve => {
             setTimeout(() => {
-                fetch('../DATA/dataecommer.js')
-            .then((response) => {
-                return response.json()})
-            .then((data) => {
-                setcharacter(data)})   
-            resolver(dataecommer);   
+                resolve(dataecommer)
+
             }, 2000)
+        } )
+
+        // const getdata = new Promise(resolver => {
+        //     setTimeout(() => {
+        //         fetch('../DATA/dataecommer.js')
+        //     .then((response) => {
+        //         return response.json()})
+        //     .then((data) => {
+        //         setcharacter(data)})   
+        //     resolver(dataecommer);   
+        //     }, 2000)
             
-        });
-        getdata.then(res =>setcharacter(res));
+        // });
+        getdata.then(res =>setcharacter(res.find(item=> item.id === parseInt(detalleId))));
     },[ detalleId ])
 
 
@@ -54,7 +61,7 @@ const ItemListContainerDetalle = () => {
   return (
     <div>
         <ItemListDetalle
-        productos = {character}  />
+        producto = {character}  />
         
        
     </div>

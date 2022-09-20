@@ -1,32 +1,40 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './ItemList.css'
 import ItemCount from '../ItemCount/ItemCount'
+import { CartContext } from '../context/CartContext.js';
 
-
-const ItemListDetalle = ({ productos }) => {
+const ItemListDetalle = ({ producto }) => {
  
+const {addItem} = useContext(CartContext);
+
+
+const onAdd = (cantidad) =>{
+
+  console.log(`Comprastes ${cantidad} unidades de ${producto.title}`)
+  addItem(producto, cantidad)
+
+}
+
 
   return (
     <div>
-        {
-          productos.map((producto, index) => (
-            
 
-             <div className='Itemlist' key={index}>
+             <div className='Itemlist'>
               <h2 className='TitleItemlist'>{producto.title}</h2>
               <div className='flexItemlist'> 
                 <img className='imgItemlist' src={producto.image} alt='No encontrado'/>
                 <div> 
                 <p>Precio : S/.{producto.precio}</p>        
                 <ItemCount 
-                productocomprar = {producto.title}
+  
+                onAdd= {onAdd}
                 />
                 </div>
               </div>
             </div>
 
-          ))
-        } 
+          
+       
      
       
       </div>

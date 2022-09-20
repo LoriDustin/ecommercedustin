@@ -1,12 +1,7 @@
 import React, {useState} from 'react'
 import './ItemCount.css'
 
-
-
-
 const Botton = ({initial, stock, onAdd}) => {
-
-  
 
   const [count, setcount] = useState(initial);
 

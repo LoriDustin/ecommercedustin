@@ -54,6 +54,7 @@ import ChocolateSublime from '../IMG/ChocolateSublime.jpg'
  
 
 export const dataecommer = [
+    
     {id: 1, title: 'Aceite Cocinero', image:`${AceiteCocinero}`, precio: 'S/ 5.00', stock: '25', categoria: 'Aceite'},
     
     {id: 2, title: 'Aceite Florida', image: `${AceiteFlorida}`, precio: 'S/ 3.00', stock: '100', categoria: 'Aceite'},
