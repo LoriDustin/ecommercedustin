@@ -4,51 +4,62 @@ import ItemListContainer2 from './components/ItemListContainer/ItemListContainer
 import ItemListContainerDetalle from './components/ItemDetalle/ItemListContainerDetalle';
 import ContactoPage from './components/ContactoPage/ContactoPage';
 import EvenstListener from './components/EvenstListener/EvenstListener';
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Comportamientos from './components/Comportamientos/Comportamientos';
 import Burbujeo from './components/Burbujeo/Burbujeo';
+import CartContainer from './components/CartContainer/CartContainer';
+
+import CartProvider from './components/context/CartContext';
+
+
+
+
 
 
 
 
 function App() {
   
+
   
   return ( 
-    <BrowserRouter>
-      <div>
-        <NavBar/>
-        <Routes>
-          <Route path='/' element={<ItemListContainer/> } /> 
-          <Route path='/contacto' element={<ContactoPage/> } /> 
-          <Route path='/productos' element={<ItemListContainer2/> } />
-          <Route path='/productos/:categoryId' element={<ItemListContainer2/> } />
+      <CartProvider>
+        <BrowserRouter>
+              <div>
 
-          <Route path='/detalle/:detalleId' element={<ItemListContainerDetalle/>} />
+                <NavBar/>
+                
+                <Routes>
+                  <Route path='/' element={<ItemListContainer/> } /> 
+                  <Route path='/contacto' element={<ContactoPage/> } /> 
+                  <Route path='/productos' element={<ItemListContainer2/> } />
+                  <Route path='/productos/:categoryId' element={<ItemListContainer2/> } />
 
-          <Route path='/evento-listener' element={<EvenstListener/>} />
-          <Route path='/comportamientos-eventos' element={<Comportamientos/>} />
-          <Route path='/burbujeo' element={<Burbujeo/>} />
-          <Route path='/detalleProducto' element={<ItemListContainerDetalle/>} />
+                  <Route path='/detalle/:detalleId' element={<ItemListContainerDetalle/>} />
 
-          {/* <Route path='/productos/limpiadores' element={<ItemListContainer2/> } /> */}
-
-
-        </Routes>
-        
-       
-        {/* 
-        <ItemListContainer />
-
-        <ItemCount/>
-             
-        <ItemListContainerDetalle/> */}
-      
-    </div>
-    </BrowserRouter>
+                  <Route path='/evento-listener' element={<EvenstListener/>} />
+                  <Route path='/comportamientos-eventos' element={<Comportamientos/>} />
+                  <Route path='/burbujeo' element={<Burbujeo/>} />
+                  <Route path='/detalleProducto' element={<ItemListContainerDetalle/>} />
+                  <Route path='/cart' element={<CartContainer/>} />
 
 
-    
+                  {/* <Route path='/productos/limpiadores' element={<ItemListContainer2/> } /> */}
+
+
+                </Routes>
+                
+              
+                {/* 
+                <ItemListContainer />
+
+                <ItemCount/>
+                    
+                <ItemListContainerDetalle/> */}
+              
+            </div>
+            </BrowserRouter>
+        </CartProvider>
   );
 }
 

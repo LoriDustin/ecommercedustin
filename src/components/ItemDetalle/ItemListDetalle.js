@@ -18,7 +18,9 @@ const ItemListDetalle = ({ productos }) => {
                 <img className='imgItemlist' src={producto.image} alt='No encontrado'/>
                 <div> 
                 <p>Precio : S/.{producto.precio}</p>        
-                <ItemCount />
+                <ItemCount 
+                productocomprar = {producto.title}
+                />
                 </div>
               </div>
             </div>

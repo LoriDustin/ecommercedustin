@@ -1,6 +1,6 @@
 import logo from '../../logo.svg';
 import './NavBar.css';
-import Icon from './Icon';
+import CartWitdget from './CartWitdget';
 import { Link, NavLink  } from 'react-router-dom'
 
 
@@ -61,7 +61,7 @@ const NavBar = () =>{
                 </ul>
             </div>
             <div>
-                <Icon/>
+                <CartWitdget/>
             </div>
 
         </div>

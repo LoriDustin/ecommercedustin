@@ -2,7 +2,11 @@ import React, {useState} from 'react'
 import './ItemCount.css'
 
 
+
+
 const Botton = ({initial, stock, onAdd}) => {
+
+  
 
   const [count, setcount] = useState(initial);
 
@@ -22,7 +26,7 @@ const Botton = ({initial, stock, onAdd}) => {
         <button className='buttonAumentar' disabled={count >= stock} onClick={aumentar}>+</button>
       </div>
       <div>
-          <button className='ButtonAgregar' disabled={stock <= 0} onClick={() => onAdd(count)}>Agregar al carrito (console.log(esta1))</button>
+          <button className='ButtonAgregar' disabled={stock <= 0} onClick={() => onAdd(count)}>Agregar al carrito</button>
       </div>
     </div>
   )

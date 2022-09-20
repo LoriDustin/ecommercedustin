@@ -1,8 +1,13 @@
 import React from 'react'
 
+
+
 const ContactoPage = () => {
+
   return (
-    <div>ContactoPage</div>
+    <div>ContactoPage
+
+    </div>
   )
 }
 

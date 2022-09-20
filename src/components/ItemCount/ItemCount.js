@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './ItemCount.css'
 import Botton from './Botton'
+import { CartContext } from '../context/CartContext.js';
 
-const ItemCount = () => {
+
+const ItemCount = ( { productocomprar } ) => {
+
+const {addItem} = useContext(CartContext);
+
+
 const onAdd = (producto) =>{
-  console.log(`Comprastes ${producto} unidades`)
+
+  console.log(`Comprastes ${producto} unidades de ${productocomprar}`)
+  
+
 }
  
 
@@ -16,6 +25,8 @@ const onAdd = (producto) =>{
     initial={1}
     stock={10}
     onAdd={onAdd}
+      
+    
     />
 
 
