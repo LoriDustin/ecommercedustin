@@ -61,7 +61,8 @@ export const CartProvider = ({ children }) =>{
 
     const getTotalPrice = () =>{
         const totalPrice = productCarList.reduce((acc, item)=> acc + item.quantityPrice, 0)
-        console.log(totalPrice)
+        // console.log(totalPrice)
+        return totalPrice
     }
 
 
