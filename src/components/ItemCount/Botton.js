@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import './ItemCount.css'
+import { Link } from 'react-router-dom';
 
 const Botton = ({initial, stock, onAdd}) => {
 
@@ -23,6 +24,13 @@ const Botton = ({initial, stock, onAdd}) => {
       <div>
           <button className='ButtonAgregar' disabled={stock <= 0} onClick={() => onAdd(count)}>Agregar al carrito</button>
       </div>
+      {
+        count > 0 &&
+        <Link>
+          <button>Ir al carrito</button>
+        </Link>
+      }
+
     </div>
   )
 }
