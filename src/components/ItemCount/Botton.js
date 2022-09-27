@@ -24,12 +24,12 @@ const Botton = ({initial, stock, onAdd}) => {
       <div>
           <button className='ButtonAgregar' disabled={stock <= 0} onClick={() => onAdd(count)}>Agregar al carrito</button>
       </div>
-      {
+      {/* {
         count > 0 &&
-        <Link>
+        <Link to='/carts'>
           <button>Ir al carrito</button>
         </Link>
-      }
+      } */}
 
     </div>
   )
