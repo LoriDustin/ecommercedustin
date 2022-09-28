@@ -1,10 +1,10 @@
 import { useEffect, useState} from 'react'
 import ItemListDetalle from './ItemListDetalle'
-import dataecommer from '../DATA/dataecommer'
+// import dataecommer from '../DATA/dataecommer'
 import { useParams } from 'react-router-dom'
 import { db } from '../../utils/firebase'
 import { doc, getDoc } from 'firebase/firestore'
-import { async } from '@firebase/util'
+// import { async } from '@firebase/util'
 
 
 
