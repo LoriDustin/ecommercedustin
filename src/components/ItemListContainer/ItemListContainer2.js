@@ -14,47 +14,69 @@ const ItemListContainer2 = () => {
 
     useEffect(()=>{
         //Creando la referencia de la coleccion
-        if(!categoryId){
-                const queryRef = collection(db, "items");
-                getDocs(queryRef).then(response => {
-                    const resultados = response.docs.map(doc=>{
-                        // console.log(doc.data())
-                        // console.log(doc.id)
-                        const newItem ={
-                            id:doc.id,
-                            ...doc.data(),
-                        }
-                        return newItem
-                    })
-                    console.log(resultados)
-                    setdata(resultados)
-                })
-
-         }else{
-           const queryRef = query(
-            collection(db, 'items'), 
-            where("categoria", "==", categoryId),
-            );
-           
-            getDocs(queryRef).then(response => {
-                const resultados = response.docs.map(doc =>{
-                    // console.log(doc.data())
-                    // console.log(doc.id)
-                    const newItem ={
-                        id:doc.id,
-                        ...doc.data(),
-                    }
-                    return newItem
-                })
-                console.log(resultados)
-                setdata(resultados)
+        const queryRef = !categoryId ? collection(db, 'items') : query(collection(db, 'items'), where('categoria', '==', categoryId));
+        getDocs(queryRef).then(response =>{
+            const resultados = response.docs.map(doc =>{
+                const newItem ={
+                    id:doc.id,
+                    ...doc.data()
+                }
+                return newItem
             })
-        }
+            setdata(resultados)
+        })
+
+
 
     },[categoryId])
 
 
     
+
+
+
+
+    // useEffect(()=>{
+    //     //Creando la referencia de la coleccion
+    //     if(!categoryId){
+    //             const queryRef = collection(db, "items");
+    //             getDocs(queryRef).then(response => {
+    //                 const resultados = response.docs.map(doc=>{
+    //                     // console.log(doc.data())
+    //                     // console.log(doc.id)
+    //                     const newItem ={
+    //                         id:doc.id,
+    //                         ...doc.data(),
+    //                     }
+    //                     return newItem
+    //                 })
+    //                 console.log(resultados)
+    //                 setdata(resultados)
+    //             })
+
+    //      }else{
+    //        const queryRef = query(
+    //         collection(db, 'items'), 
+    //         where("categoria", "==", categoryId),
+    //         );
+           
+    //         getDocs(queryRef).then(response => {
+    //             const resultados = response.docs.map(doc =>{
+    //                 // console.log(doc.data())
+    //                 // console.log(doc.id)
+    //                 const newItem ={
+    //                     id:doc.id,
+    //                     ...doc.data(),
+    //                 }
+    //                 return newItem
+    //             })
+    //             console.log(resultados)
+    //             setdata(resultados)
+    //         })
+    //     }
+
+    // },[categoryId])
+
 
 
 

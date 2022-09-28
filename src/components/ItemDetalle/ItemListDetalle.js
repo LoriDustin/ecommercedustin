@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import './ItemList.css'
+import '../ItemCount/ItemCount.css'
 import ItemCount from '../ItemCount/ItemCount'
 import { CartContext } from '../context/CartContext.js';
 
