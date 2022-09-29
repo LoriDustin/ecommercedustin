@@ -1,7 +1,8 @@
 import React, { useContext } from 'react'
 import './ItemList.css'
 import '../ItemCount/ItemCount.css'
-import ItemCount from '../ItemCount/ItemCount'
+import Botton from '../ItemCount/Botton'
+// import ItemCount from '../ItemCount/ItemCount'
 import { CartContext } from '../context/CartContext.js';
 
 const ItemListDetalle = ({ producto }) => {
@@ -27,10 +28,14 @@ const onAdd = (cantidad) =>{
                 <img className='imgItemlist' src={producto.image} alt='No encontrado'/>
                 <div> 
                 <p>Precio : S/.{producto.precio}</p>        
-                <ItemCount 
-  
-                onAdd= {onAdd}
-                />
+                <div className='contador'>
+                <Botton
+                initial={1}
+                stock={10}
+                onAdd={onAdd}/>
+                </div>
+
+
                 </div>
               </div>
             </div>
