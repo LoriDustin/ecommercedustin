@@ -36,6 +36,7 @@ const CartContainer = () => {
       addDoc(queryRef, order).then(response=>{
         console.log('response', response)
         setidOrden(response.id)
+        clear();
       })
 
     }
@@ -53,8 +54,19 @@ const CartContainer = () => {
 
     <div>
       <button onClick={updateOrder}>Actualizar Orden</button>
-      {idOrder && <p> su orden fue creado, id {idOrder}</p>}
-      {
+      {idOrder ?
+      <>
+      <p> su orden fue creado, id {idOrder}</p>
+      <Link to='/productos' >
+      Ir al listado de productos
+      </Link >
+
+      </>
+        
+        :
+        <div> 
+
+{
         productCarList.length > 0 ? 
         <div>
             {productCarList.map(item =>(
@@ -93,9 +105,15 @@ const CartContainer = () => {
                    </Link >
                   </>
       }
-     
+
+        </div>
+      
+      }
   
+      
     </div>
+
+
   )
 }
 
