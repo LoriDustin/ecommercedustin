@@ -35,7 +35,9 @@ const NavBar = () =>{
                     <li>
                         <NavLink className={({isActive}) => isActive ? "claseActivo" : "claseInactivo" } to='/productos/Chocolate'>Chocolate</NavLink>
                     </li>
-                    <li>
+
+
+                    {/* <li>
                         <NavLink className={({isActive}) => isActive ? "claseActivo" : "claseInactivo" }  to='/evento-listener'>EvenstListener</NavLink>
                     </li>
                     <li>
@@ -56,7 +58,9 @@ const NavBar = () =>{
 
                     <li>
                         <Link to='https://notube.site/es/youtube-app-v19' target='_blank'>Pagina Externa</Link>
-                    </li>
+                    </li> */}
+
+
                  
                 </ul>
             </div>
