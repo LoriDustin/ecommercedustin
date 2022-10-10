@@ -1,13 +1,21 @@
-.Itemlist{
-    width: 600px;
+.CartList{
+    width: 100%;
+    height: 100vh;
+    padding-top: 150px;
+}
+
+.ItemlistCart{
+    margin: auto;
+    width: 500px;
     height: 50vh;
-    background-color: rgb(255, 255, 255);
-    border: black 2px solid;
-    border-radius: 5%;
+    background-color: rgba(235, 228, 228, 0.734);
+    border: black 5px solid;
+    border-radius: 20px;
 
 }
 
 .flexItemlist{
+    padding-top: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -15,10 +23,13 @@
 
 .TitleItemlist{
     color: black;
+    border-radius: 15px 15px 0 0;
     background-color: blue;
 }
 
 .imgItemlist{
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
+    border: black 4px solid;
+    border-radius: 20px;
 }

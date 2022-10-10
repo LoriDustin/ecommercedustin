@@ -26,15 +26,7 @@ const ItemListContainer2 = () => {
             setdata(resultados)
         })
 
-
-
     },[categoryId])
-
-
-    
-
-
-
 
     // useEffect(()=>{
     //     //Creando la referencia de la coleccion

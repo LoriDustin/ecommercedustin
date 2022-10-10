@@ -1,7 +1,7 @@
 .ItemList{
-    background-color: bisque;
-    height: 50vh;
+    padding-top: 80px;
 }
+
 h2{
     color: blue;
     text-align: center;

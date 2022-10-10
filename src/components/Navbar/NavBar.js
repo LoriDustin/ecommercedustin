@@ -5,35 +5,35 @@ import { Link, NavLink  } from 'react-router-dom'
 
 
 const NavBar = () =>{
-    const ImgReact = {
-        width: '100px',
-        backgroundColor: 'red',
-    }
 
     return(
         <div className='heard'>
-            <div>
-                <Link to='/'>
-                    <img style={ImgReact} src={logo} alt='logo'/>
-                </Link>
-                
-            </div>
-            <div>
                 <ul>
                     <li>
-                        <NavLink className={({isActive}) => isActive ? "claseActivo" : "claseInactivo" } to='/'>Inicio</NavLink>
+                    <Link to='/'>
+                        <img  className='ImgReact' src={logo} alt='logo'/>
+                    </Link>
+                        
+                    </li>
+
+                    <li>
+                        <NavLink className={({isActive}) => isActive ? "claseActivo" : "claseInactivo" } to='/'>INICIO</NavLink>
                     </li>
                     <li>
-                        <NavLink className={({isActive}) => isActive ? "claseActivo" : "claseInactivo" } to='/productos'>Productos</NavLink>
+                        <NavLink className={({isActive}) => isActive ? "claseActivo" : "claseInactivo" } to='/productos'>PRODUCTOS</NavLink>
                     </li>
                     <li>
-                        <NavLink className={({isActive}) => isActive ? "claseActivo" : "claseInactivo" } to='/productos/Aceite'>Aceite</NavLink>
+                        <NavLink className={({isActive}) => isActive ? "claseActivo" : "claseInactivo" } to='/productos/Aceite'>ACEITE</NavLink>
                     </li>
                     <li>
-                        <NavLink className={({isActive}) => isActive ? "claseActivo" : "claseInactivo" } to='/productos/Arroz'>Arroz</NavLink>
+                        <NavLink className={({isActive}) => isActive ? "claseActivo" : "claseInactivo" } to='/productos/Arroz'>ARROZ</NavLink>
                     </li>
                     <li>
-                        <NavLink className={({isActive}) => isActive ? "claseActivo" : "claseInactivo" } to='/productos/Chocolate'>Chocolate</NavLink>
+                        <NavLink className={({isActive}) => isActive ? "claseActivo" : "claseInactivo" } to='/productos/Chocolate'>CHOCOLATE</NavLink>
+                    </li>
+
+                    <li>
+                        <CartWitdget/>
                     </li>
 
 
@@ -59,15 +59,7 @@ const NavBar = () =>{
                     <li>
                         <Link to='https://notube.site/es/youtube-app-v19' target='_blank'>Pagina Externa</Link>
                     </li> */}
-
-
-                 
                 </ul>
-            </div>
-            <div>
-                <CartWitdget/>
-            </div>
-
         </div>
 
     );

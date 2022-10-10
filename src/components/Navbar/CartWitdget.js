@@ -11,8 +11,8 @@ const CartWitdget = () => {
   return (
     <div>
       <Link to="/cart">
-        <img src={carritodeCompra} alt='Imagen no encontrado' style={{width:20}} />
-        <span style={{backgroundColor:"white", borderRadius:"50%", width:"10px", height:"10px", fontSize:"10px", color:"black" }}>{getTotalProducts()}</span>
+        <img src={carritodeCompra} alt='Imagen no encontrado' style={{width:30}} />
+        <span style={{backgroundColor:"white", borderRadius:"50px", width:"50px", height:"40px", fontSize:"20px", color:"black" }}>{getTotalProducts()}</span>
       </Link>
     </div>
   )

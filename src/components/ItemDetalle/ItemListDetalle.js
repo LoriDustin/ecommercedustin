@@ -20,31 +20,23 @@ const onAdd = (cantidad) =>{
 
 
   return (
-    <div>
-
-             <div className='Itemlist'>
-              <h2 className='TitleItemlist'>{producto.title}</h2>
-              <div className='flexItemlist'> 
-                <img className='imgItemlist' src={producto.image} alt='No encontrado'/>
-                <div> 
+    <div className='CartList'>
+        <div className='ItemlistCart'>
+            <h2 className='TitleItemlist'>{producto.title}</h2>
+            <div className='flexItemlist'> 
+              <img className='imgItemlist' src={producto.image} alt='No encontrado'/>
+              <div> 
                 <p>Precio : S/.{producto.precio}</p>        
                 <div className='contador'>
-                <Botton
-                initial={1}
-                stock={10}
-                onAdd={onAdd}/>
-                </div>
-
-
+                  <Botton
+                  initial={1}
+                  stock={10}
+                  onAdd={onAdd}/>
                 </div>
               </div>
             </div>
-
-          
-       
-     
-      
-      </div>
+        </div>
+    </div>
   )
 }
 
