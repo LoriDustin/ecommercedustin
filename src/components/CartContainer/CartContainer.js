@@ -1,4 +1,5 @@
 import React from 'react'
+import "./CartContainer.css"
 import { useContext, useState } from 'react'
 import { CartContext } from '../context/CartContext'
 import { Link } from 'react-router-dom'
@@ -52,12 +53,12 @@ const CartContainer = () => {
 
   return (
 
-    <div>
-      <button onClick={updateOrder}>Actualizar Orden</button>
+    <div className='ListCompraProducto'>
+      {/* <button className='ButtonActualizar' onClick={updateOrder}>Actualizar Orden</button> */}
       {idOrder ?
       <>
-      <p> su orden fue creado, id {idOrder}</p>
-      <Link to='/productos' >
+      <p className='OrdenCreado'> Muchas Gracias! .Su orden fue creado, id {idOrder}</p>
+      <Link to='/productos' className='LinkProducto' >
       Ir al listado de productos
       </Link >
 
@@ -68,20 +69,21 @@ const CartContainer = () => {
 
 {
         productCarList.length > 0 ? 
-        <div>
+        <div className='ProductoComprado'>
             {productCarList.map(item =>(
-                <div style={{border: '1px solid black', margin: '10px', width: '200px'}}>
-                  <p>{item.title}</p>
+                <div className='ProductoSeleccionado'>
+                  <p className='NombreProducto'>{item.title}</p>
                   <p> Cantidad: {item.quantity}</p>
                   <p> Precio unitario: S/. {item.precio}</p>
-                  <p> Precio Producto: S/. {item.quantityPrice}</p>
-                  <button onClick={()=> removeItem(item.id)}>Eliminar Producto</button>
+                  <p> Total: S/. {item.quantityPrice}</p>
+                  <button onClick={()=> removeItem(item.id)}>Eliminar</button>
                 </div>
                 ))}
 
-              <button onClick={clear}>Vaciar el Carrito</button>
-              <p>Precio total: {getTotalPrice()}</p>
-              <form onSubmit={sendOrder}>
+              <p className='TotalCompra'>Precio total: {getTotalPrice()}</p>
+              <button className='buttonClear' onClick={clear}>Vaciar el Carrito</button>
+              
+              <form className='FormularioProducto' onSubmit={sendOrder}>
                 <label>Nombre: </label>
                 <input type='texto'/>
                 <label>Telefono: </label>
@@ -89,7 +91,6 @@ const CartContainer = () => {
                 <label>Correo: </label>
                 <input type='email'/>
                 <button type='submit'>Enviar Orden</button>
-
               </form>
 
 
@@ -98,12 +99,12 @@ const CartContainer = () => {
         </div>
 
               :
-                  <>
+                  <div className='CarritoVacido'>
                     <p>El carrito esta vacio, Agrega algun producto</p>
-                   <Link to='/productos' >
+                   <Link to='/productos' className='LinkProducto'>
                     Ir al listado de productos
                    </Link >
-                  </>
+                  </div>
       }
 
         </div>

@@ -1,0 +1,126 @@
+.CarritoVacido{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+}
+
+.ButtonActualizar{
+    padding: 5px 30px 5px 30px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.ListCompraProducto{
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 100px;
+    margin: auto 25%;
+    border-radius: 20px;
+    
+}
+
+.CarritoVacido p{
+    font-size: 1.5rem;
+}
+
+.LinkProducto{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(121, 113, 229);
+    cursor: pointer;
+}
+
+.TotalCompra{
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+.buttonClear{
+    
+    font-weight: 700;
+    padding: 2px 20px 2px 20px;
+    border-radius: 50px;
+}
+
+
+/* -------------------------------------- */
+
+.ProductoComprado{
+    width: 100%;
+    max-height: 420vh;
+    background-color: rgba(100, 148, 237, 0.511);
+    padding-top: 5px;
+    border-radius: 10px;
+}
+
+.ProductoSeleccionado{
+    width: 700px;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ProductoSeleccionado p{
+    font-weight: 700;
+}
+
+.ProductoSeleccionado button{
+    font-weight: 700;
+    color: black;
+    padding: 2px 10px 2px 10px;
+    cursor: pointer;
+}
+
+.NombreProducto{
+    color: white;
+    font-weight: 700;
+}
+
+.FormularioProducto{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+label{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+input{
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+
+/* ------- */
+
+.OrdenCreado{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+
+

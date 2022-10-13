@@ -25,8 +25,8 @@ const onAdd = (cantidad) =>{
             <h2 className='TitleItemlist'>{producto.title}</h2>
             <div className='flexItemlist'> 
               <img className='imgItemlist' src={producto.image} alt='No encontrado'/>
-              <div> 
-                <p>Precio : S/.{producto.precio}</p>        
+              <div className='ListPrecioProducto'> 
+                <p className='ListPrecio'>Precio : S/.{producto.precio}</p>        
                 <div className='contador'>
                   <Botton
                   initial={1}
